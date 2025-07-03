@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .glow-red {
+    box-shadow: 0 0 20px rgba(255, 0, 51, 0.5);
+  }
+
+  .glow-red-intense {
+    box-shadow: 0 0 30px rgba(255, 0, 51, 0.8);
+  }
+
+  .text-gradient {
+    background: linear-gradient(45deg, #ff0033, #ff6666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
